@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 98d369d663f8b5c46858c79e0f65ddab
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: DoubleDeepOutletBlackBody
+    100002: DoubleDeepOutletBody
+    100004: DoubleDeepOutletClamps_L
+    100006: DoubleDeepOutletClamps_R
+    100008: DoubleDeepOutletEmpty
+    100010: DoubleDeepOutletScrew_L
+    100012: DoubleDeepOutletScrew_R
+    100014: DoubleFlatOutletBlackBody
+    100016: DoubleFlatOutletBody
+    100018: DoubleFlatOutletEmpty
+    100020: DoubleFlatOutletScrew_L
+    100022: DoubleFlatOutletScrew_R
+    100024: //RootNode
+    100026: SingleDeepOutletBlackBody
+    100028: SingleDeepOutletBody
+    100030: SingleDeepOutletClamps
+    100032: SingleDeepOutletEmpty
+    100034: SingleDeepOutletScrew
+    100036: SingleFlatOutletBlackBody
+    100038: SingleFlatOutletBody
+    100040: SingleFlatOutletEmpty
+    100042: SingleFlatOutletScrew
+    400000: DoubleDeepOutletBlackBody
+    400002: DoubleDeepOutletBody
+    400004: DoubleDeepOutletClamps_L
+    400006: DoubleDeepOutletClamps_R
+    400008: DoubleDeepOutletEmpty
+    400010: DoubleDeepOutletScrew_L
+    400012: DoubleDeepOutletScrew_R
+    400014: DoubleFlatOutletBlackBody
+    400016: DoubleFlatOutletBody
+    400018: DoubleFlatOutletEmpty
+    400020: DoubleFlatOutletScrew_L
+    400022: DoubleFlatOutletScrew_R
+    400024: //RootNode
+    400026: SingleDeepOutletBlackBody
+    400028: SingleDeepOutletBody
+    400030: SingleDeepOutletClamps
+    400032: SingleDeepOutletEmpty
+    400034: SingleDeepOutletScrew
+    400036: SingleFlatOutletBlackBody
+    400038: SingleFlatOutletBody
+    400040: SingleFlatOutletEmpty
+    400042: SingleFlatOutletScrew
+    2300000: DoubleDeepOutletBlackBody
+    2300002: DoubleDeepOutletBody
+    2300004: DoubleDeepOutletClamps_L
+    2300006: DoubleDeepOutletClamps_R
+    2300008: DoubleDeepOutletScrew_L
+    2300010: DoubleDeepOutletScrew_R
+    2300012: DoubleFlatOutletBlackBody
+    2300014: DoubleFlatOutletBody
+    2300016: DoubleFlatOutletScrew_L
+    2300018: DoubleFlatOutletScrew_R
+    2300020: SingleDeepOutletBlackBody
+    2300022: SingleDeepOutletBody
+    2300024: SingleDeepOutletClamps
+    2300026: SingleDeepOutletScrew
+    2300028: SingleFlatOutletBlackBody
+    2300030: SingleFlatOutletBody
+    2300032: SingleFlatOutletScrew
+    3300000: DoubleDeepOutletBlackBody
+    3300002: DoubleDeepOutletBody
+    3300004: DoubleDeepOutletClamps_L
+    3300006: DoubleDeepOutletClamps_R
+    3300008: DoubleDeepOutletScrew_L
+    3300010: DoubleDeepOutletScrew_R
+    3300012: DoubleFlatOutletBlackBody
+    3300014: DoubleFlatOutletBody
+    3300016: DoubleFlatOutletScrew_L
+    3300018: DoubleFlatOutletScrew_R
+    3300020: SingleDeepOutletBlackBody
+    3300022: SingleDeepOutletBody
+    3300024: SingleDeepOutletClamps
+    3300026: SingleDeepOutletScrew
+    3300028: SingleFlatOutletBlackBody
+    3300030: SingleFlatOutletBody
+    3300032: SingleFlatOutletScrew
+    4300000: DoubleFlatOutletScrew_L
+    4300002: DoubleFlatOutletScrew_R
+    4300004: DoubleFlatOutletBlackBody
+    4300006: DoubleFlatOutletBody
+    4300008: SingleFlatOutletBody
+    4300010: SingleFlatOutletBlackBody
+    4300012: SingleFlatOutletScrew
+    4300014: DoubleDeepOutletScrew_L
+    4300016: DoubleDeepOutletClamps_L
+    4300018: DoubleDeepOutletBody
+    4300020: DoubleDeepOutletClamps_R
+    4300022: DoubleDeepOutletBlackBody
+    4300024: DoubleDeepOutletScrew_R
+    4300026: SingleDeepOutletScrew
+    4300028: SingleDeepOutletBlackBody
+    4300030: SingleDeepOutletClamps
+    4300032: SingleDeepOutletBody
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

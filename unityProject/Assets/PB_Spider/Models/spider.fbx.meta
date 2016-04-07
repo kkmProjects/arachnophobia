@@ -129,7 +129,7 @@ ModelImporter:
     13700000: mesh
   materials:
     importMaterials: 1
-    materialName: 2
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
@@ -857,7 +857,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: .00999999978
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
@@ -871,7 +871,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 0
+    splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
