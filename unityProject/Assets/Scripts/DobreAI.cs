@@ -22,6 +22,8 @@ public class DobreAI : MonoBehaviour {
 	private bool patrzNaGracza = false;
 	private Vector3 pozycjaGraczaXYZ; 
 
+	public Rigidbody rb;
+
 	// Use this for initialization
 	void Start () {
 		mojObiekt = transform; 
@@ -29,13 +31,15 @@ public class DobreAI : MonoBehaviour {
 		//Wyłaczenie oddziaływanie fizyki na XYZ - 
 		// jak obiekt będzie wchodził pod górkę to się przechyli prostopadle do zbocza a fizyka pociągnie go w dół i
 		// obiekt się przewróci. POZATYM NIE CHCEMY ABY WRÓG SIĘ TAK DZIWNIE OBRACAŁ ;).
-		if (GetComponent<Rigidbody> ()) {
-			GetComponent<Rigidbody> ().freezeRotation = true;
+		rb = GetComponent<Rigidbody>();
+
+		if (rb) {
+			rb.freezeRotation = true;
 		}
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		//Pobranie obiektu gracza.
 		gracz = GameObject.FindWithTag("Player").transform; 
 
@@ -55,7 +59,7 @@ public class DobreAI : MonoBehaviour {
 			//Vector3.MoveTowards - pozwala na zdefiniowanie nowej pozycji gracza oraz wykonanie animacji.
 			//Pierwszy parametr obecna pozycja drógi parametr pozycja do jakiej dążymy (czyli pozycja gracza).
 			//Trzeci parametr określa z jaką prędkością animacja/ruch ma zostać wykonany.
-			mojObiekt.position = Vector3.MoveTowards(mojObiekt.position, pozycjaGraczaXYZ, predkoscRuchu * Time.deltaTime);
+			mojObiekt.position = Vector3.MoveTowards(mojObiekt.position, pozycjaGraczaXYZ + transform.forward, predkoscRuchu * Time.deltaTime);
 
 		} else if(dist <= odstepOdGracza) { //Jeżeli wróg jest tuż przy graczu to niech ciągle na niego patrzy mimo że nie musi się już poruszać.
 			patrzNaGracza = true;

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class movement : MonoBehaviour {
-	public Vector3 teleportPoint;
+
 	public Rigidbody rb;
 
 	// Use this for initialization
@@ -18,4 +18,13 @@ public class movement : MonoBehaviour {
 	void FixedUpdate() {
 		rb.MovePosition(transform.position + transform.forward * Time.deltaTime);
 	}
+		
+	/*void OnCollisionEnter(Collision col) {
+
+		if (col.gameObject.name == "scianaPrzod" || col.gameObject.name == "scianaPrawa") { 
+
+		}
+	}*/
+
+
 }
