@@ -22250,7 +22250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTime: 2
   fadeColor: {r: .00999999978, g: .00999999978, b: .00999999978, a: 1}
-  fadeShader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  fadeShader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 3}
 --- !u!20 &773122054
 Camera:
   m_ObjectHideFlags: 0
@@ -24204,7 +24204,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
       propertyPath: m_LocalScale.x
@@ -38329,7 +38329,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
       propertyPath: m_LocalScale.x
@@ -38349,13 +38349,22 @@ Prefab:
       objectReference: {fileID: 9100000, guid: e488f7faf39a2c040aa6711ef502a8df, type: 2}
     - target: {fileID: 9500000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
       propertyPath: m_UpdateMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 100100, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
+      propertyPath: m_Name
+      value: spiderAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
   m_RootGameObject: {fileID: 1804535224}
   m_IsPrefabParent: 0
@@ -42780,7 +42789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTime: 2
   fadeColor: {r: .00999999978, g: .00999999978, b: .00999999978, a: 1}
-  fadeShader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
+  fadeShader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 3}
 --- !u!20 &1512792221
 Camera:
   m_ObjectHideFlags: 0
@@ -47796,12 +47805,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b265ff3a6796f40890806b542a002b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  predkoscObrotu: 2
+  predkoscObrotu: 6
   gladkiObrot: 1
-  predkoscRuchu: .400000006
+  predkoscRuchu: 5
   zasiegWzroku: 30
   odstepOdGracza: 2
-  rb: {fileID: 1686390746}
+  rb: {fileID: 0}
 --- !u!95 &1686390749
 Animator:
   serializedVersion: 3
@@ -50857,12 +50866,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1804535225}
-  - 95: {fileID: 1804535229}
-  - 114: {fileID: 1804535228}
   - 65: {fileID: 1804535227}
   - 54: {fileID: 1804535226}
+  - 114: {fileID: 1804535230}
+  - 95: {fileID: 1804535228}
   m_Layer: 0
-  m_Name: spider
+  m_Name: spiderAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50909,7 +50918,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.02495861, y: 2.22042727, z: 6.84021139}
   m_Center: {x: .0436928049, y: 1.23723745, z: .437583029}
---- !u!114 &1804535228
+--- !u!95 &1804535228
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1804535224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1923a9f940f1dcb489773229ec6023a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1804535230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -50917,26 +50941,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1804535224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c33c462623ed9c499a2ded3baaa82d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 31c615488f7f9404081f0e76f0f907eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
---- !u!95 &1804535229
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: f5a9bd478ca094495a4520e37f57420d,
-    type: 3}
-  m_PrefabInternal: {fileID: 1345888347}
-  m_GameObject: {fileID: 1804535224}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
-  m_Controller: {fileID: 9100000, guid: e488f7faf39a2c040aa6711ef502a8df, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  predkoscObrotu: 6
+  gladkiObrot: 1
+  predkoscRuchu: 5
+  zasiegWzroku: 30
+  odstepOdGracza: 2
+  rb: {fileID: 1804535226}
 --- !u!1 &1807188278
 GameObject:
   m_ObjectHideFlags: 0
