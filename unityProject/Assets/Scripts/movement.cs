@@ -20,7 +20,7 @@ public class movement : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		transform.Rotate(0,180,0);
+		transform.Rotate(0,Random.Range(100, 260),0);
 	}
 
 	

@@ -20,6 +20,21 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1102 &110200916
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400006, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
+  m_ParentStateMachine: {fileID: 110718070}
+  m_Position: {x: 83, y: 113, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110218070
 State:
   m_ObjectHideFlags: 3
@@ -35,6 +50,66 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110222264
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400006, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
+  m_ParentStateMachine: {fileID: 110718070}
+  m_Position: {x: 118, y: 178, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110227502
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack 2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400006, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
+  m_ParentStateMachine: {fileID: 110718070}
+  m_Position: {x: 223, y: 373, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110241090
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: attack 1
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400006, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
+  m_ParentStateMachine: {fileID: 110718070}
+  m_Position: {x: 188, y: 308, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110286424
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: walk 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400002, guid: f5a9bd478ca094495a4520e37f57420d, type: 3}
+  m_ParentStateMachine: {fileID: 110718070}
+  m_Position: {x: 153, y: 243, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1107 &110718070
 StateMachine:
   serializedVersion: 2
@@ -45,6 +120,11 @@ StateMachine:
   m_DefaultState: {fileID: 110218070}
   m_States:
   - {fileID: 110218070}
+  - {fileID: 110200916}
+  - {fileID: 110222264}
+  - {fileID: 110286424}
+  - {fileID: 110241090}
+  - {fileID: 110227502}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions: {}
