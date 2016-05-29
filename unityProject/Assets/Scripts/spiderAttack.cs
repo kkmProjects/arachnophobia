@@ -8,6 +8,7 @@ public class spiderAttack : MonoBehaviour {
 	
 	//Gładki obrót przeciwnika
 	public bool gladkiObrot = true;
+	public Animation a;
 	
 	
 	//Prędkość poruszania się przeciwnika.
@@ -21,10 +22,11 @@ public class spiderAttack : MonoBehaviour {
 	private Transform gracz;
 	private bool patrzNaGracza = false;
 	private Vector3 pozycjaGraczaXYZ; 
+	GameObject pajak;
+
 	
 	public Rigidbody rb;
 
-	protected Animation a;
 	// Use this for initialization
 	void Start () {
 		mojObiekt = transform; 
@@ -37,16 +39,14 @@ public class spiderAttack : MonoBehaviour {
 		if (rb) {
 			rb.freezeRotation = true;
 		}
-		a = GetComponent<Animation> ();
+
+		pajak = GameObject.Find("spiderAttack");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		var anim = mojObiekt.GetComponent<Animation>();
-		a.Play("attack");
-		if (!a.isPlaying) {
-			a.Play("attack");
-		}
+		var anim = pajak.GetComponent<Animation>().Play("attack");
+		a.Play();
 
 	}
 
