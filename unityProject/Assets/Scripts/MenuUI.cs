@@ -39,17 +39,20 @@ public class MenuUI : MonoBehaviour {
 
 
 	void Update () {
-		if (Input.GetKeyUp (KeyCode.Escape)) { 
+		if(quitMenu.enabled || startMenu.enabled || mainMenu.enabled){
+			Screen.lockCursor = false;
+			Screen.showCursor = true;
+		} 
+		if (Input.GetKeyUp (KeyCode.M)) { 
 			mainMenu.enabled = !mainMenu.enabled;
 
 			
-			if(mainMenu.enabled) {
-
+			if(mainMenu.enabled) {;
 				Time.timeScale = 0;
 				quitMenu.enabled = false; 
 				spidersNormalButton.enabled = true; 
 				btnExit.enabled = true; 
-			} else {
+			}else {
 
 				Time.timeScale = 1;
 				quitMenu.enabled = false;
@@ -62,6 +65,7 @@ public class MenuUI : MonoBehaviour {
 	public void PrzyciskWyjscie() {
 		quitMenu.enabled = true;
 		mainMenu.enabled = false;
+		Screen.showCursor = false;
 	}
 
 
@@ -75,6 +79,7 @@ public class MenuUI : MonoBehaviour {
 		mainMenu.enabled = false; 
 		spiders1.SetActive (true);
 		spiders2.SetActive (false);
+		Screen.showCursor = false;
 		Time.timeScale = 1;
 	}
 
@@ -82,6 +87,7 @@ public class MenuUI : MonoBehaviour {
 		mainMenu.enabled = false;
 		spiders1.SetActive (true);
 		spiders2.SetActive (true);
+		Screen.showCursor = false;
 		Time.timeScale = 1;
 	}
 
@@ -89,6 +95,7 @@ public class MenuUI : MonoBehaviour {
 		mainMenu.enabled = false;
 		spiders1.SetActive(false);
 		spiders2.SetActive (false);
+		Screen.showCursor = false;
 		Time.timeScale = 1;
 	}
 
@@ -105,6 +112,7 @@ public class MenuUI : MonoBehaviour {
 
 	public void QuitNo(){
 		quitMenu.enabled = false;
+		Screen.showCursor = false;
 		Time.timeScale = 1;
 	}
 }
