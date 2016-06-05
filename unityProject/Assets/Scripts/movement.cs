@@ -7,7 +7,7 @@ public class movement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody>();
+		rb = GetComponent<Rigidbody>(); //pobranie obiektu pająka
 	}
 	
 	// Update is called once per frame
@@ -16,11 +16,11 @@ public class movement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		rb.MovePosition(transform.position + transform.forward * Time.deltaTime);
+		rb.MovePosition(transform.position + transform.forward * Time.deltaTime); //zmiana pozycji pająka
 	}
 
 	void OnCollisionEnter(Collision col){
-		transform.Rotate(0,Random.Range(100, 260),0);
+		transform.Rotate(0,Random.Range(100, 260),0); //odbicie pająka przy kolizji
 	}
 
 	
